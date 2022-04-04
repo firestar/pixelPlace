@@ -89,6 +89,5 @@ for(var oInd=0;oInd<objects.length;oInd++){
     }
   }
 }
-var scaled = document.createElement("img");
 const buffer = canvas.toBuffer("image/png");
 fs.writeFileSync("./template.png", buffer);
