@@ -59,7 +59,7 @@ const objects = [
         ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy', '1:black' ],
         ['1:dark_brown', '1:burgundy', '9:black', '2:burgundy', '1:black' ],
         ['1:brown', '1:dark_brown', '11:burgundy', '1:black'],
-        ['2:brown', '4:dark_brown', '7:burgundy', '1:black'],
+        ['2:brown', '4:dark_brown', '7:burgundy', '1:black']
     ]
   },
     {
@@ -82,7 +82,7 @@ const objects = [
             [ '1:blue', '1:gray', '8:light_pink', '2:gray', '2:blue', '1:dark_blue', '1:light_gray' ],
             [ '2:dark_gray', '2:pale_yellow', '1:light_gray', '1:pink', '2:light_pink', '1:pink', '2:pale_yellow', '1:light_pink', '1:light_gray', '1:blue', '1:dark_blue', '1:dark_gray' ],
             [ '1:black', '1:dark_brown', '1:dark_gray', '1:light_gray', '1:pale_yellow', '1:light_pink', '1:pink', '2:light_pink', '3:pale_yellow', '1:gray', '3:dark_gray' ],
-            [ '1:black', '3:dark_gray', '2:gray', '1:light_pink', '1:gray', '2:light_pink', '6:dark_gray' ],
+            [ '1:black', '3:dark_gray', '2:gray', '1:light_pink', '1:gray', '2:light_pink', '6:dark_gray' ]
         ]
     }
 ]
