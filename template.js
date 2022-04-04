@@ -41,9 +41,12 @@ const objects = [
     y: 1322,
     x: 1974,
     matrix: [
-        ['1:black', '12:burgundy'],
-        ['1:black', '12:burgundy'],
-        ['1:black', '2:burgundy', '2:black', '3:burgundy', '2:black', '3:burgundy' ],
+            // 1 black, 12 repeating burgundy
+        ['1:black', '12:burgundy'], 
+            // 1 black, 12 repeating burgundy
+        ['1:black', '12:burgundy'], 
+            // 1 black, 2 repeating burgundy, 2 repeating black, 3 repeating burgundy, 2 repeating black, 3 repeating burgundy.
+        ['1:black', '2:burgundy', '2:black', '3:burgundy', '2:black', '3:burgundy' ], 
         ['1:black', '2:burgundy', '1:black', '1:dark_red', '3:black', '1:dark_red', '1:black', '3:burgundy'],
         ['1:black', '2:burgundy', '2:black', '3:dark_gray', '2:black', '3:burgundy' ],
         ['1:black', '1:burgundy', '2:black', '1:dark_gray', '1:black', '1:dark_gray', '1:black', '1:dark_gray', '2:black', '2:burgundy' ],
