@@ -86,7 +86,7 @@ const objects = [
         ]
     },
         {
-        x: 1965,
+        x: 1962,
         y: 1335,
         name: 'lily',
         matrix: [
