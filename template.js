@@ -64,7 +64,7 @@ const objects = [
   },
   {
     x: 124,
-    y: 1155,
+    y: 1156,
     name: 'numiLaugh',
     matrix: [
         [ '3:black', '1:burgundy', '10:black', '2:burgundy' ],
