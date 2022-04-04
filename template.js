@@ -1,4 +1,6 @@
 const { createCanvas } = require("canvas");
+const fs = require("fs");
+
 const colorMap = {
         'burgundy':'6D001A',
         'dark_red':'BE0039',
@@ -85,5 +87,5 @@ for(var y=0;y<matrix.length;y++){
     }
 }
 var scaled = document.createElement("img");
-var url = canvas.toDataURL('image/png');
-
+const buffer = canvas.toBuffer("image/png");
+fs.writeFileSync("./template.png", buffer);
