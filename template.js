@@ -59,13 +59,13 @@ const objects = [
 ]
 var canvas = createCanvas(6000,6000);
 var ctx = canvas.getContext("2d");
-
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, width, height);
 const scale=1;
 for(var oInd=0;oInd<objects.length;oInd++){
   const object = objects[oInd];
   const matrix = object.matrix;
   console.log('rendering '+object.name);
-  const yPos = object.y;
   for(var y=0;y<matrix.length;y++){
     var xPos = object.x;
     var len = matrix[y].length;
@@ -79,7 +79,7 @@ for(var oInd=0;oInd<objects.length;oInd++){
       const xCount = data[dataLen-2];
       ctx.fillStyle = '#'+colorMap[color];
       for(var c=1;c<=parseInt(xCount);c++){
-        ctx.fillRect(xPos*3+1, (y+yPos)*3+1, 1,1);
+        ctx.fillRect(xPos*3+1, (y+object.y)*3+1, 1,1);
         xPos++;
       }
     }
