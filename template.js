@@ -53,7 +53,7 @@ const objects = [
         ['2:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
         ['1:dark_brown', '1:burgundy', '9:black', '2:burgundy' ],
         ['1:brown', '1:dark_brown', '11:burgundy'],
-        ['2:brown', '1:dark_brown', '10:burgundy'],
+        ['2:brown', '1:dark_brown', '10:red'],
     ]
   }
 ]
