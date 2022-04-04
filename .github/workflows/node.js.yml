@@ -33,3 +33,4 @@ jobs:
         author_email: firestar@synload.com
         message: 'updated template image'
         add: 'template.png'
+        push: 'origin template_release --set-upstream --force'
