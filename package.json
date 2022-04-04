@@ -4,7 +4,7 @@
   "description": "",
   "main": "template.js",
   "scripts": {
-    "test": "nodejs ./template.js"
+    "test": "node ./template.js"
   },
   "keywords": [],
   "author": "",
