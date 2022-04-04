@@ -37,52 +37,57 @@ const colorMap = {
     }
 const objects = [
   {
-    'numi': {
-      y: 1322,
-      x: 974,
-      data: [
-          ['1:black', '12:burgundy'],
-          ['1:black', '12:burgundy'],
-          ['1:black', '2:burgundy', '2:black', '3:burgundy', '2:black', '3:burgundy' ],
-          ['1:black', '2:burgundy', '1:black', '1:dark_red', '3:black', '1:dark_red', '1:black', '3:burgundy'],
-          ['1:black', '2:burgundy', '2:black', '3:dark_gray', '2:black', '3:burgundy' ],
-          ['1:black', '1:burgundy', '2:black', '1:dark_gray', '1:black', '1:dark_gray', '1:black', '1:dark_gray', '2:black', '2:burgundy' ],
-          ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
-          ['2:burgundy', '1:black', '1:dark_gray', '1:light_pink', '3:dark_gray', '1:light_pink', '1:dark_gray', '1:black', '2:burgundy' ],
-          ['2:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
-          ['2:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
-          ['1:dark_brown', '1:burgundy', '9:black', '2:burgundy' ],
-          ['1:brown', '1:dark_brown', '11:burgundy'],
-          ['2:brown', '1:dark_brown', '10:burgundy'],
-      ]
-    }
+    name: 'numi',
+    y: 1322,
+    x: 974,
+    matrix: [
+        ['1:black', '12:burgundy'],
+        ['1:black', '12:burgundy'],
+        ['1:black', '2:burgundy', '2:black', '3:burgundy', '2:black', '3:burgundy' ],
+        ['1:black', '2:burgundy', '1:black', '1:dark_red', '3:black', '1:dark_red', '1:black', '3:burgundy'],
+        ['1:black', '2:burgundy', '2:black', '3:dark_gray', '2:black', '3:burgundy' ],
+        ['1:black', '1:burgundy', '2:black', '1:dark_gray', '1:black', '1:dark_gray', '1:black', '1:dark_gray', '2:black', '2:burgundy' ],
+        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
+        ['2:burgundy', '1:black', '1:dark_gray', '1:light_pink', '3:dark_gray', '1:light_pink', '1:dark_gray', '1:black', '2:burgundy' ],
+        ['2:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
+        ['2:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
+        ['1:dark_brown', '1:burgundy', '9:black', '2:burgundy' ],
+        ['1:brown', '1:dark_brown', '11:burgundy'],
+        ['2:brown', '1:dark_brown', '10:burgundy'],
+    ]
   }
 ]
 var canvas = createCanvas(6000,6000);
 var ctx = canvas.getContext("2d");
-const yPos = 1322;
+
 const scale=1;
-for(var y=0;y<matrix.length;y++){
-    var xPos = 0;
+for(var oInd=0;oInd<objects.length;oInd++){
+  var object = objects[oInd];
+  var matrix = object.matrix;
+  console.log('rendering '+object.name);
+  const yPos = object.y;
+  for(var y=0;y<matrix.length;y++){
+    var xPos = object.x;
     var len = matrix[y].length;
     for(var x=0;x<len;x++){
-        const data = matrix[y][x].split(":");
-        const dataLen = data.length;
-        if(!dataLen || dataLen<2){
-            break;
-        }
-        const color = data[dataLen-1];
-        const xCount = data[dataLen-2];
-        const xStart = 0;
-        if(dataLen>2){
-            xPos = parseInt(data[0]);
-        }
-        ctx.fillStyle = '#'+colorMap[color];
-        for(var c=1;c<=parseInt(xCount);c++){
-            ctx.fillRect(xPos*3+1, (y+yPos)*3+1, 1,1);
-            xPos++;
-        }
+      const data = matrix[y][x].split(":");
+      const dataLen = data.length;
+      if(!dataLen || dataLen<2){
+        break;
+      }
+      const color = data[dataLen-1];
+      const xCount = data[dataLen-2];
+      const xStart = 0;
+      if(dataLen>2){
+        xPos = parseInt(data[0]);
+      }
+      ctx.fillStyle = '#'+colorMap[color];
+      for(var c=1;c<=parseInt(xCount);c++){
+        ctx.fillRect(xPos*3+1, (y+yPos)*3+1, 1,1);
+        xPos++;
+      }
     }
+  }
 }
 var scaled = document.createElement("img");
 const buffer = canvas.toBuffer("image/png");
