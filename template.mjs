@@ -1,4 +1,4 @@
-const objects={
+export const objects={
   'numi': {
     y: 1322,
     x: 974,
