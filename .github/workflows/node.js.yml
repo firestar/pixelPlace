@@ -23,12 +23,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Delete branch
-      uses: dawidd6/action-delete-branch@v3
-      with:
-        github_token: ${{github.token}}
-        branches: template_release
     - run: npm ci
+    - run: rm template.png
     - run: npm run build --if-present
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
