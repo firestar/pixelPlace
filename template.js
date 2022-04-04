@@ -39,7 +39,7 @@ const objects = [
   {
     name: 'numi',
     y: 1322,
-    x: 974,
+    x: 1974,
     matrix: [
         ['1:black', '12:burgundy'],
         ['1:black', '12:burgundy'],
