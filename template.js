@@ -62,8 +62,8 @@ var ctx = canvas.getContext("2d");
 
 const scale=1;
 for(var oInd=0;oInd<objects.length;oInd++){
-  var object = objects[oInd];
-  var matrix = object.matrix;
+  const object = objects[oInd];
+  const matrix = object.matrix;
   console.log('rendering '+object.name);
   const yPos = object.y;
   for(var y=0;y<matrix.length;y++){
@@ -77,10 +77,6 @@ for(var oInd=0;oInd<objects.length;oInd++){
       }
       const color = data[dataLen-1];
       const xCount = data[dataLen-2];
-      const xStart = 0;
-      if(dataLen>2){
-        xPos = parseInt(data[0]);
-      }
       ctx.fillStyle = '#'+colorMap[color];
       for(var c=1;c<=parseInt(xCount);c++){
         ctx.fillRect(xPos*3+1, (y+yPos)*3+1, 1,1);
