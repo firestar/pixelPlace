@@ -128,7 +128,7 @@ const objects = [
             [ '1:black', '1:teal', '1:light_blue', '1:teal', '1:light_blue', '1:teal', '1:light_blue', '1:teal', '2:light_blue', '2:black', '1:light_blue', '1:teal', '1:light_blue', '2:black', '1:teal', '1:light_blue', '1:teal', '1:light_blue', '1:teal', '1:light_blue', '1:teal', '1:light_blue', '1:teal', '1:black' ],
             [ '27:black' ],
         ]
-    }
+    },
 ]
 var canvas = createCanvas(6000,6000);
 var ctx = canvas.getContext("2d");
