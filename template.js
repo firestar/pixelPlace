@@ -39,25 +39,26 @@ const objects = [
   {
     name: 'numi', // noomba
     // (1974, 1322)
-    x: 1974, // start x position
-    y: 1322, // start y position 
+    x: 1973, // start x position
+    y: 1321, // start y position 
     matrix: [
+        ['14:black'],
             // 1 black, 12 repeating burgundy
-        ['1:black', '12:burgundy'], 
+        ['1:black', '12:burgundy', '1:black'], 
             // 1 black, 12 repeating burgundy
-        ['1:black', '12:burgundy'], 
+        ['1:black', '12:burgundy', '1:black'], 
             // 1 black, 2 repeating burgundy, 2 repeating black, 3 repeating burgundy, 2 repeating black, 3 repeating burgundy.
-        ['1:black', '2:burgundy', '2:black', '3:burgundy', '2:black', '3:burgundy' ], 
-        ['1:black', '2:burgundy', '1:black', '1:dark_red', '3:black', '1:dark_red', '1:black', '3:burgundy'],
-        ['1:black', '2:burgundy', '2:black', '3:dark_gray', '2:black', '3:burgundy' ],
-        ['1:black', '1:burgundy', '2:black', '1:dark_gray', '1:black', '1:dark_gray', '1:black', '1:dark_gray', '2:black', '2:burgundy' ],
-        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
-        ['1:black', '1:burgundy', '1:black', '1:dark_gray', '1:light_pink', '3:dark_gray', '1:light_pink', '1:dark_gray', '1:black', '2:burgundy' ],
-        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
-        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy' ],
-        ['1:dark_brown', '1:burgundy', '9:black', '2:burgundy' ],
-        ['1:brown', '1:dark_brown', '11:burgundy'],
-        ['2:brown', '4:dark_brown', '7:burgundy'],
+        ['1:black', '2:burgundy', '2:black', '3:burgundy', '2:black', '3:burgundy', '1:black' ], 
+        ['1:black', '2:burgundy', '1:black', '1:dark_red', '3:black', '1:dark_red', '1:black', '3:burgundy', '1:black'],
+        ['1:black', '2:burgundy', '2:black', '3:dark_gray', '2:black', '3:burgundy', '1:black' ],
+        ['1:black', '1:burgundy', '2:black', '1:dark_gray', '1:black', '1:dark_gray', '1:black', '1:dark_gray', '2:black', '2:burgundy', '1:black' ],
+        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy', '1:black' ],
+        ['1:black', '1:burgundy', '1:black', '1:dark_gray', '1:light_pink', '3:dark_gray', '1:light_pink', '1:dark_gray', '1:black', '2:burgundy', '1:black' ],
+        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy', '1:black' ],
+        ['1:black', '1:burgundy', '1:black', '7:dark_gray', '1:black', '2:burgundy', '1:black' ],
+        ['1:dark_brown', '1:burgundy', '9:black', '2:burgundy', '1:black' ],
+        ['1:brown', '1:dark_brown', '11:burgundy', '1:black'],
+        ['2:brown', '4:dark_brown', '7:burgundy', '1:black'],
     ]
   }
 ]
