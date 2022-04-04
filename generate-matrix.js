@@ -94,9 +94,16 @@ resizeImage(settings.file, settings.width, settings.height).then(r => {
                     const mapColor = colorMap[c];
                     return {
                         color: c,
-                        distance: rgbDistance(mapColor.r, mapColor.g, mapColor.b, rgb.r, rgb.g, rgb.b)
+                        distance: rgbDistance(mapColor.r, mapColor.g, mapColor.b, rgb.r, rgb.g, rgb.b),
+                        rgb
                     }
-                }).sort((a,b)=>a.distance-b.distance)[0].color;
+                }).sort((a,b)=>a.distance-b.distance)[0];
+
+                if(nearestColor.rgb.a==0){
+                    nearestColor = 'blank';
+                }else{
+                    nearestColor = nearestColor.color;
+                }
                 if(nearestColor!=currentColor.color && currentColor.color!=null){
                     image[y].push(currentColor.count+":"+currentColor.color)
                     currentColor.color = nearestColor;
