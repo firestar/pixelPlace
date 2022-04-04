@@ -37,9 +37,10 @@ const colorMap = {
     }
 const objects = [
   {
-    name: 'numi',
-    y: 1322,
-    x: 1974,
+    name: 'numi', // noomba
+    // (1974, 1322)
+    x: 1974, // start x position
+    y: 1322, // start y position 
     matrix: [
             // 1 black, 12 repeating burgundy
         ['1:black', '12:burgundy'], 
