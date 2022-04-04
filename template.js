@@ -59,8 +59,7 @@ const objects = [
 ]
 var canvas = createCanvas(6000,6000);
 var ctx = canvas.getContext("2d");
-ctx.fillStyle = "white";
-ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 const scale=1;
 for(var oInd=0;oInd<objects.length;oInd++){
   const object = objects[oInd];
