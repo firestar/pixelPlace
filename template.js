@@ -62,29 +62,29 @@ const objects = [
         ['2:brown', '4:dark_brown', '7:burgundy', '1:black'],
     ]
   },
-  {
-    x: 124,
-    y: 1156,
-    name: 'numiLaugh',
-    matrix: [
-        [ '3:black', '1:burgundy', '10:black', '2:burgundy' ],
-        [ '2:black', '3:burgundy', '1:black', '6:dark_gray', '1:black', '3:burgundy' ],
-        [ '2:black', '1:burgundy', '1:black', '1:dark_gray', '7:gray', '2:dark_brown', '1:black', '1:burgundy' ],
-        [ '2:black', '1:burgundy', '1:dark_gray', '10:gray', '1:dark_brown', '1:burgundy' ],
-        [ '2:black', '1:dark_gray', '2:gray', '1:dark_gray', '8:gray', '2:dark_gray' ],
-        [ '1:black', '2:dark_gray', '2:dark_purple', '4:gray', '1:dark_gray', '1:gray', '1:dark_purple', '1:dark_blue', '2:dark_purple', '1:dark_gray' ],
-        [ '1:black', '3:dark_gray', '2:gray', '1:dark_gray', '2:dark_purple', '1:gray', '6:dark_gray' ],
-        [ '1:black', '2:dark_gray', '2:gray', '1:light_pink', '2:gray', '1:dark_gray', '1:gray', '2:dark_gray', '1:gray', '3:dark_gray' ],
-        [ '1:black', '1:dark_gray', '2:light_gray', '1:white', '1:gray', '2:pale_yellow', '1:light_gray', '1:gray', '2:light_gray', '1:gray', '3:dark_gray' ],
-        [ '1:black', '1:dark_gray', '1:light_gray', '1:black', '1:dark_gray', '1:light_gray', '2:pale_yellow', '1:gray', '1:light_gray', '1:dark_gray', '1:gray', '1:light_gray', '3:dark_gray' ],
-        [ '1:black', '1:dark_gray', '1:white', '1:dark_gray', '2:gray', '2:pale_yellow', '1:gray', '1:light_gray', '1:black', '1:dark_gray', '1:light_gray', '2:dark_gray', '1:light_pink' ],
-        [ '1:dark_blue', '1:blue', '3:gray', '1:light_pink', '2:pale_yellow', '1:light_pink', '2:light_gray', '1:white', '2:gray', '1:dark_gray', '1:light_pink' ],
-        [ '1:blue', '1:gray', '8:light_pink', '2:gray', '2:blue', '1:dark_blue', '1:light_gray' ],
-        [ '2:dark_gray', '2:pale_yellow', '1:light_gray', '1:pink', '2:light_pink', '1:pink', '2:pale_yellow', '1:light_pink', '1:light_gray', '1:blue', '1:dark_blue', '1:dark_gray' ],
-        [ '1:black', '1:dark_brown', '1:dark_gray', '1:light_gray', '1:pale_yellow', '1:light_pink', '1:pink', '2:light_pink', '3:pale_yellow', '1:gray', '3:dark_gray' ],
-        [ '1:black', '3:dark_gray', '2:gray', '1:light_pink', '1:gray', '2:light_pink', '6:dark_gray' ],
-    ]
-  }
+    {
+        x: 124,
+        y: 1156,
+        name: 'test',
+        matrix: [
+            [ '2:blank', '1:black', '1:burgundy', '1:black', '1:blank', '6:black', '1:blank', '1:black', '2:burgundy' ],
+            [ '1:blank', '1:black', '3:burgundy', '1:black', '6:dark_gray', '1:black', '3:burgundy' ],
+            [ '1:blank', '1:black', '1:burgundy', '1:black', '1:dark_gray', '7:gray', '2:dark_brown', '1:black', '1:burgundy' ],
+            [ '1:blank', '1:black', '1:burgundy', '1:dark_gray', '10:gray', '1:dark_brown', '1:burgundy' ],
+            [ '1:blank', '1:black', '1:dark_gray', '2:gray', '1:dark_gray', '8:gray', '2:dark_gray' ],
+            [ '1:black', '2:dark_gray', '2:dark_purple', '4:gray', '1:dark_gray', '1:gray', '1:dark_purple', '1:dark_blue', '2:dark_purple', '1:dark_gray' ],
+            [ '1:black', '3:dark_gray', '2:gray', '1:dark_gray', '2:dark_purple', '1:gray', '6:dark_gray' ],
+            [ '1:black', '2:dark_gray', '2:gray', '1:light_pink', '2:gray', '1:dark_gray', '1:gray', '2:dark_gray', '1:gray', '3:dark_gray' ],
+            [ '1:black', '1:dark_gray', '2:light_gray', '1:white', '1:gray', '2:pale_yellow', '1:light_gray', '1:gray', '2:light_gray', '1:gray', '3:dark_gray' ],
+            [ '1:black', '1:dark_gray', '1:light_gray', '1:black', '1:dark_gray', '1:light_gray', '2:pale_yellow', '1:gray', '1:light_gray', '1:dark_gray', '1:gray', '1:light_gray', '3:dark_gray' ],
+            [ '1:black', '1:dark_gray', '1:white', '1:dark_gray', '2:gray', '2:pale_yellow', '1:gray', '1:light_gray', '1:black', '1:dark_gray', '1:light_gray', '2:dark_gray', '1:light_pink' ],
+            [ '1:dark_blue', '1:blue', '3:gray', '1:light_pink', '2:pale_yellow', '1:light_pink', '2:light_gray', '1:white', '2:gray', '1:dark_gray', '1:light_pink' ],
+            [ '1:blue', '1:gray', '8:light_pink', '2:gray', '2:blue', '1:dark_blue', '1:light_gray' ],
+            [ '2:dark_gray', '2:pale_yellow', '1:light_gray', '1:pink', '2:light_pink', '1:pink', '2:pale_yellow', '1:light_pink', '1:light_gray', '1:blue', '1:dark_blue', '1:dark_gray' ],
+            [ '1:black', '1:dark_brown', '1:dark_gray', '1:light_gray', '1:pale_yellow', '1:light_pink', '1:pink', '2:light_pink', '3:pale_yellow', '1:gray', '3:dark_gray' ],
+            [ '1:black', '3:dark_gray', '2:gray', '1:light_pink', '1:gray', '2:light_pink', '6:dark_gray' ],
+        ]
+    }
 ]
 var canvas = createCanvas(6000,6000);
 var ctx = canvas.getContext("2d");
@@ -105,7 +105,11 @@ for(var oInd=0;oInd<objects.length;oInd++){
       }
       const color = data[dataLen-1];
       const xCount = data[dataLen-2];
-      ctx.fillStyle = '#'+colorMap[color];
+      if(color!='blank') {
+          ctx.fillStyle = '#' + colorMap[color];
+      }else{
+          ctx.fillStyle = 'rgba(255, 255, 255, 0)';
+      }
       for(var c=1;c<=parseInt(xCount);c++){
         ctx.fillRect(xPos*3+1, (y+object.y)*3+1, 1,1);
         xPos++;
