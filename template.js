@@ -58,9 +58,7 @@ const objects = [
     }
   }
 ]
-var canvas = document.createElement("canvas");
-canvas.width = 6000;
-canvas.height = 6000;
+var canvas = createCanvas(6000,6000);
 var ctx = canvas.getContext("2d");
 const yPos = 1322;
 const scale=1;
