@@ -39,7 +39,7 @@ const objects = [
   {
     name: 'numi', // noomba
     // (1974, 1322)
-    x: 1973, // start x position
+    x: 1974, // start x position
     y: 1321, // start y position 
     matrix: [
         ['14:black'],
